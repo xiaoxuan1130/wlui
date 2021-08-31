@@ -1,0 +1,49 @@
+common:
+  getTrs: //div[@class='el-table__header-wrapper']/../div[3]/table/tbody/tr
+  addSubmit:  //*[text()='确 定']/..
+  query:  //*[text()='查询']/..
+  modify:  //*[text()='编辑']/..
+  delete: //*[text()='删 除']/..
+  close:  //div[@class='el-dialog__header']/button
+  alert:  //div[@role='alert']
+  select: //div[@x-placement='bottom-start']//li
+
+equipment:
+  title:  //*[text()='设备管理']/..
+  lineTitle:  //*[text()='生产厂线管理']/..
+  machineTitle: //*[text()='机台群组管理']/..
+  equipmentTitle: //*[text()='设备信息管理']/..
+  addLineClick: //*[text()='新增厂线']/..
+  addMachineClick: //*[text()='添加机台群组']/..
+  addEquipmentClick: //*[text()='添加设备']/..
+  addLineName:  //*[text()='厂线名']/../div/div/input
+  addMachineName:  //*[text()='机台群组名称']/../div/div/input
+  addLineNumber:  //*[text()='厂线代码']/../div/div/input
+  addLineDescription: //*[text()='厂线描述']/../div/div/textarea
+  addAreaClick: //*[text()='增加区域']/..
+  addArea:  //div[@class='box']/div/div/div/input
+  queryLineName:  //*[text()='厂线名称']/../div/div/input
+  box:  //div[@class='record-box']
+  boxInput: div[@class='box']/div/div/div/input
+  equipmentName:  //*[text()='设备名称']/../div/div/input
+  equipmentNumber:  //*[text()='设备编号']/../div/div/input
+  equipmentMachine:  //*[text()='机台型号']/../div/div/input
+  assetNumber:  //*[text()='固定资产编号']/../div/div/input
+  assetAttributes:  //label[text()='资产属性']/../div/div/div/input
+  assetSource:  //label[text()='资产来源']/../div/div/div/input
+  manufacturer:  //*[text()='厂商']/../div/div/input
+  principal:  //*[text()='负责人']/../div/div/input
+  equipmentType:  //label[text()='设备类型']/../div/div/div/input
+  useable:  //label[text()='是否可用']/../div/div/div/input
+  station:  //label[text()='机台站别']/../div/div/div/input
+  equipmentLine:  //label[text()='厂线']/../div/div/div/input
+  equpmentArea:  //label[text()='区域位置']/../div/div/div/input
+  enterTime:  //*[text()='入厂时间']/../div/div/input
+  machineLineName:  //label[text()='所在厂线']/../div/div/div/input
+  addMachineEquipment:  //label[text()='添加设备']/../div/div/div/input
+  machineRemark:  //*[text()='群组描述']/../div/div/textarea
+
+product:
+  title:  //*[text()='生产计划管理']/..
+  planTitle:  //*[text()='生产单管理']/..
+
