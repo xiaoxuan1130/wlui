@@ -8,13 +8,13 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="session")
 def login():
-    driver=webdriver.Chrome()
-    # chrome_options = Options()
-    # chrome_options.add_argument('--headless')
-    # chrome_options.add_argument('--no-sandbox')
-    # chrome_options.add_argument('--disable-gpu')
-    # chrome_options.add_argument('--disable-dev-shm-usage')
-    # driver = webdriver.Chrome(chrome_options=chrome_options)
+    #driver=webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome(chrome_options=chrome_options)
 
     driver.get("http://192.168.10.164:8420/#/login")
     driver.find_elements_by_css_selector("div[class='el-form-item__content']>div>input")[0].send_keys("liyuexuan")
