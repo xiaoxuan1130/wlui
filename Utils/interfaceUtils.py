@@ -1,6 +1,7 @@
 import requests
 
 from Utils.readyaml import ReadYaml
+from logger.Loggers import Loggers
 
 
 class InterfaceUtils():
@@ -16,4 +17,5 @@ class InterfaceUtils():
             re=requests.post(self.url,headers=self.headers,json=json)
         else:
             re=requests.put(self.url, headers=self.headers, json=json)
+        Loggers().logger.info("调用接口返回数据======="+re.text)
         return re

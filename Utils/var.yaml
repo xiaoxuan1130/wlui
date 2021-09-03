@@ -9,4 +9,5 @@ url:
 
 interface_url:
   mes-api-erp_manufacture_orders: /api/v1.0/erp/manufacture_orders
+  mes-api-erp_materials:  /api/v1.0/erp/materials
 
